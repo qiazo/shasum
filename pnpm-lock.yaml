@@ -50,7 +50,7 @@ importers:
         version: 9.1.7
       lint-staged:
         specifier: ^15.3.0
-        version: 15.3.0
+        version: 15.4.0
       prettier:
         specifier: ^3.4.2
         version: 3.4.2
@@ -788,10 +788,6 @@ packages:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
 
-  chalk@5.3.0:
-    resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
-
   chalk@5.4.1:
     resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
@@ -1282,10 +1278,6 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
-  lilconfig@3.1.2:
-    resolution: {integrity: sha512-eop+wDAvpItUys0FWkHIKeC9ybYrTGbU41U5K7+bttZZeohvnY7M9dZ5kB21GNWiFT2q1OoPTvncPCgSOVO5ow==}
-    engines: {node: '>=14'}
-
   lilconfig@3.1.3:
     resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
     engines: {node: '>=14'}
@@ -1293,8 +1285,8 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  lint-staged@15.3.0:
-    resolution: {integrity: sha512-vHFahytLoF2enJklgtOtCtIjZrKD/LoxlaUusd5nh7dWv/dkKQJY74ndFSzxCdv7g0ueGg1ORgTSt4Y9LPZn9A==}
+  lint-staged@15.4.0:
+    resolution: {integrity: sha512-UdODqEZiQimd7rCzZ2vqFuELRNUda3mdv7M93jhE4SmDiqAj/w/msvwKgagH23jv2iCPw6Q5m+ltX4VlHvp2LQ==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -1952,7 +1944,7 @@ snapshots:
   '@commitlint/format@19.5.0':
     dependencies:
       '@commitlint/types': 19.5.0
-      chalk: 5.3.0
+      chalk: 5.4.1
 
   '@commitlint/is-ignored@19.6.0':
     dependencies:
@@ -1972,7 +1964,7 @@ snapshots:
       '@commitlint/execute-rule': 19.5.0
       '@commitlint/resolve-extends': 19.5.0
       '@commitlint/types': 19.5.0
-      chalk: 5.3.0
+      chalk: 5.4.1
       cosmiconfig: 9.0.0(typescript@5.7.2)
       cosmiconfig-typescript-loader: 6.1.0(@types/node@18.19.69)(cosmiconfig@9.0.0(typescript@5.7.2))(typescript@5.7.2)
       lodash.isplainobject: 4.0.6
@@ -2023,7 +2015,7 @@ snapshots:
   '@commitlint/types@19.5.0':
     dependencies:
       '@types/conventional-commits-parser': 5.0.0
-      chalk: 5.3.0
+      chalk: 5.4.1
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
@@ -2176,7 +2168,7 @@ snapshots:
   '@eslint/config-array@0.19.0':
     dependencies:
       '@eslint/object-schema': 2.1.4
-      debug: 4.3.7
+      debug: 4.4.0
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -2357,7 +2349,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/typescript-estree': 8.19.0(typescript@5.7.2)
       '@typescript-eslint/utils': 8.19.0(eslint@9.17.0(jiti@2.4.2))(typescript@5.7.2)
-      debug: 4.3.7
+      debug: 4.4.0
       eslint: 9.17.0(jiti@2.4.2)
       ts-api-utils: 1.3.0(typescript@5.7.2)
       typescript: 5.7.2
@@ -2370,7 +2362,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.19.0
       '@typescript-eslint/visitor-keys': 8.19.0
-      debug: 4.3.7
+      debug: 4.4.0
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -2529,8 +2521,6 @@ snapshots:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-
-  chalk@5.3.0: {}
 
   chalk@5.4.1: {}
 
@@ -3018,13 +3008,11 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  lilconfig@3.1.2: {}
-
   lilconfig@3.1.3: {}
 
   lines-and-columns@1.2.4: {}
 
-  lint-staged@15.3.0:
+  lint-staged@15.4.0:
     dependencies:
       chalk: 5.4.1
       commander: 12.1.0
@@ -3225,7 +3213,7 @@ snapshots:
 
   postcss-load-config@6.0.1(jiti@2.4.2)(postcss@8.4.39)(yaml@2.6.1):
     dependencies:
-      lilconfig: 3.1.2
+      lilconfig: 3.1.3
     optionalDependencies:
       jiti: 2.4.2
       postcss: 8.4.39
@@ -3474,7 +3462,7 @@ snapshots:
   vite-node@2.1.8(@types/node@18.19.69):
     dependencies:
       cac: 6.7.14
-      debug: 4.3.7
+      debug: 4.4.0
       es-module-lexer: 1.5.4
       pathe: 1.1.2
       vite: 5.3.3(@types/node@18.19.69)
