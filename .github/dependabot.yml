@@ -17,3 +17,13 @@ updates:
     schedule:
       interval: "daily"
     open-pull-requests-limit: 10
+    groups:
+      commitlint-dependencies:
+        patterns: [ "@commitlint/cli", "@commitlint/config-conventional" ]
+      eslint-dependencies:
+        patterns: [ "@eslint/eslintrc", "@eslint/js", "eslint", "globals" ]
+      typescript-eslint-dependencies:
+        patterns: [ "@typescript-eslint/eslint-plugin", "@typescript-eslint/parser" ]
+      ignore:
+        - dependency-name: "@types/node"
+          versions: [ ">=19" ]
