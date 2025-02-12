@@ -24,6 +24,6 @@ updates:
         patterns: [ "@eslint/eslintrc", "@eslint/js", "eslint", "globals" ]
       typescript-eslint-dependencies:
         patterns: [ "@typescript-eslint/eslint-plugin", "@typescript-eslint/parser" ]
-      ignore:
-        - dependency-name: "@types/node"
-          versions: [ ">=19" ]
+    ignore:
+      - dependency-name: "@types/node"
+        versions: [ ">=19" ]
