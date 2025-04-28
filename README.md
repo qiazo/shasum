@@ -1,21 +1,19 @@
-# shasum
+# @insco/shasum
 
-[![Test](https://github.com/kjxbyz/shasum/actions/workflows/test.yml/badge.svg)](https://github.com/kjxbyz/shasum/actions/workflows/test.yml)
-[![Publish](https://github.com/kjxbyz/shasum/actions/workflows/publish.yml/badge.svg)](https://github.com/kjxbyz/shasum/actions/workflows/publish.yml)
-[![NPM Version](https://img.shields.io/npm/v/ts-shasum)](https://www.npmjs.com/package/ts-shasum)
-[![NPM Downloads](https://img.shields.io/npm/dy/ts-shasum)](https://www.npmjs.com/package/ts-shasum)
-[![NPM License](https://img.shields.io/npm/l/ts-shasum)](https://github.com/kjxbyz/shasum/blob/main/LICENSE)
+[![Test](https://github.com/insco-inc/shasum/actions/workflows/test.yml/badge.svg)](https://github.com/insco-inc/shasum/actions/workflows/test.yml)
+[![Publish](https://github.com/insco-inc/shasum/actions/workflows/publish.yml/badge.svg)](https://github.com/insco-inc/shasum/actions/workflows/publish.yml)
+[![NPM Version](https://img.shields.io/npm/v/%40insco%2Fshasum)](https://www.npmjs.com/package/@insco/shasum)
 
 ## Install
 
 ```bash
-npm i ts-shasum
+npm i @insco/shasum
 ```
 
 ## Debug
 
 ```bash
-npx ts-shasum -h
+npx @insco/shasum -h
 ```
 
 ## Tests
@@ -26,4 +24,4 @@ shasum --algorithm 256 -c SHASUMS256.txt
 
 ## License
 
-MIT
+[MIT](./LICENSE)

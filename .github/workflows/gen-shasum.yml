@@ -22,8 +22,8 @@ jobs:
         with:
           version: 9
 
-      - name: Install ts-shasum
-        run: pnpm add --global ts-shasum
+      - name: Install @insco/shasum
+        run: pnpm add --global @insco/shasum
 
       - name: Download assets
         uses: robinraju/release-downloader@v1

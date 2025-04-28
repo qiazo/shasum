@@ -1,19 +1,19 @@
 {
-  "name": "ts-shasum",
+  "name": "@insco/shasum",
   "version": "1.2.0",
   "description": "Compute and check SHA256 message digest.",
   "keywords": [
     "sha256sum",
     "shasum"
   ],
-  "homepage": "https://github.com/kjxbyz/shasum",
-  "bugs": "https://github.com/kjxbyz/shasum/issues",
+  "homepage": "https://github.com/insco-inc/shasum",
+  "bugs": "https://github.com/insco-inc/shasum/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kjxbyz/shasum.git"
+    "url": "git+https://github.com/insco-inc/shasum.git"
   },
   "license": "MIT",
-  "author": "kjxbyz <kjxbyz888@outlook.com> (https://github.com/kjxbyz)",
+  "author": "kjxbyz <hello@kjxbyz.com> (https://github.com/kjxbyz)",
   "exports": {
     ".": {
       "import": {
