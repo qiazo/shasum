@@ -19,7 +19,7 @@ npx @insco/shasum -h
 ## Tests
 
 ```bash
-shasum --algorithm 256 -c SHASUMS256.txt
+shasum create --algorithm 256 SHASUMS256.txt *
 ```
 
 ## License
