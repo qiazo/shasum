@@ -26,7 +26,7 @@ export default defineConfig([
     ...options,
     entry: ["src/cli.ts"],
     dts: false,
-    noExternal: ["cac"],
+    noExternal: ["cac", "chalk", "consola"],
   },
   {
     ...options,
