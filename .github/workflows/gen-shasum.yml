@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
-        node-version: [18.x]
+        node-version: [20.x]
 
     runs-on: ${{ matrix.os }}
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -19,8 +19,6 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 9
 
       - name: Install @insco/shasum
         run: pnpm add --global @insco/shasum
@@ -31,27 +29,27 @@ jobs:
           # The source repository path.
           # Expected format {owner}/{repo}
           repository: 'cyf/faforever'
-      
+
           # The github tag. e.g: v1.0.1
           # Download assets from a specific tag/version
           tag: 'v1.0.0+16'
-      
+
           # The name of the file to download.
           # Use this field only to specify filenames other than tarball or zipball, if any.
           # Supports wildcard pattern (eg: '*', '*.deb', '*.zip' etc..)
           fileName: '*'
-      
+
           # Download the attached tarball (*.tar.gz)
           tarBall: true
-      
+
           # Download the attached zipball (*.zip)
           zipBall: true
-      
+
           # Relative path under $GITHUB_WORKSPACE to place the downloaded file(s)
           # It will create the target directory automatically if not present
           # eg: out-file-path: "my-downloads" => It will create directory $GITHUB_WORKSPACE/my-downloads
           out-file-path: 'ff-downloads'
-      
+
       # Runs a set of commands using the runners shell
       - name: Build on Windows
         if: ${{ matrix.os == 'windows-latest' }}
@@ -74,4 +72,4 @@ jobs:
         with:
           name: SHASUMS256-${{ matrix.os }}.txt
           path: ${{ github.workspace }}/SHASUMS256.txt
-      
+
