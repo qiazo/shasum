@@ -33,6 +33,4 @@ jobs:
           pnpm install
 
       - name: Publish
-        run: pnpm publish --publish-branch main --provenance --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm publish --access public --no-git-checks
