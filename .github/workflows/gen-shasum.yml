@@ -56,7 +56,7 @@ jobs:
         run: shasum create "$env:GITHUB_WORKSPACE\SHASUMS256.txt" *
         working-directory: ${{ github.workspace }}\ff-downloads
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         if: ${{ matrix.os == 'windows-latest' }}
         with:
           name: SHASUMS256-${{ matrix.os }}.txt
@@ -67,7 +67,7 @@ jobs:
         run: shasum create "$GITHUB_WORKSPACE/SHASUMS256.txt" *
         working-directory: ${{ github.workspace }}/ff-downloads
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         if: ${{ matrix.os == 'ubuntu-latest' }}
         with:
           name: SHASUMS256-${{ matrix.os }}.txt
