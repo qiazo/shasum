@@ -6,11 +6,11 @@
     "sha256sum",
     "shasum"
   ],
-  "homepage": "https://github.com/insco-inc/shasum",
-  "bugs": "https://github.com/insco-inc/shasum/issues",
+  "homepage": "https://github.com/qiazo/shasum",
+  "bugs": "https://github.com/qiazo/shasum/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/insco-inc/shasum.git"
+    "url": "git+https://github.com/qiazo/shasum.git"
   },
   "license": "MIT",
   "author": "kjxbyz <hello@kjxbyz.com> (https://github.com/kjxbyz)",
